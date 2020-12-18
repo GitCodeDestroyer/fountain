@@ -1,0 +1,409 @@
+@import "grid.css";
+@import "form.css";
+
+* {
+	box-sizing: border-box;
+	background:transparent;
+	border:0 none;
+	font-size:100%;
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	list-style:none;
+	quotes:none;
+}
+
+/*** MODAL ***/
+
+.modal {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 10000;
+	background: #0007;
+}
+
+.modal-inner {
+	height: 100vh;
+	margin-top: 200px;
+	width: 600px;
+	background: #fff;
+	margin: 0 auto;
+	color: #666;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.modal-inner img {
+	width: 60%;
+	margin: 0 auto;
+	display: block;
+	border-radius: 5px;
+}
+
+.modal-inner h3 {
+	font-size: 25px;
+	color: #A6E22A;
+}
+
+.modal-inner h3 span {
+	font-size: 15px;
+	text-decoration: line-through;
+	color: #F92659;
+}
+
+.modal-inner p {
+	margin-top: 10px;
+	color: #333;
+}
+
+.modal-exit {
+	color: #F92659;
+	float: right;
+	font-size: 30px !important;
+	cursor: pointer;
+}
+
+/*** HEADER ***/
+
+.top {
+	height: 70px;
+	line-height: 70px;
+	padding: 0 2%;
+}
+
+/* headerning Logotipi */
+
+.top .logo {
+	float: left;
+}
+
+.top .logo img {
+	height: 40px;
+}
+
+/* headerning menusi */
+
+.top .menu {
+	float: right;
+}
+
+.top .menu a {
+	padding: 25px 0;
+	margin: 0 10px;
+	color: #222;
+	font: 20px Arial;
+}
+
+/*** SLIDER ***/
+
+.camera_wrap {
+	font-family: Arial;
+}
+
+/* Go! degan knopkaning stili. slider o'rtasida */
+
+.camera_wrap .button-go {
+	margin-top: 40px;
+	left: 35%;
+	z-index: 1;
+	width: 30%;
+	color: #fff;
+	height: 50px;
+	font-size: 20px;
+	line-height: 50px;
+	position: absolute;
+	text-align: center;
+	font-family: Arial;
+	background: #24BFE8;
+	transition: all .3s;
+	border-radius: 1.5px;
+}
+
+.camera_wrap .button-go:hover {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+
+/*** PRODUCTS ***/
+
+.thumb {
+	cursor: pointer;
+	width: 24.6%;
+	display: inline-block;
+	background: #222;
+	overflow: hidden;
+}
+
+.thumb .content {
+	width: 24.6vw;
+	position: absolute;
+	font: 18px sans-serif;
+	color: #fff;
+	padding: 15px;
+}
+
+.thumb .content h2 {
+	text-transform: uppercase;
+	margin: 10px 0;
+}
+
+.thumb .wrapper {
+	position: relative;
+}
+
+/* Responsive for products images */
+
+
+/*** HUMAN ***/
+
+.sectionhead h3{font-size: 28px;}
+.sectionhead h4{font-size: 18px; line-height: 1.4em;}
+.sectionhead p{letter-spacing: 1px;color: #555;font-weight: lighter;}
+.sectionhead ul{padding: 0;}
+.sectionhead a{color: #ea9312}
+.sectionhead a:hover{color: #c3c3c3; text-decoration: none;}
+
+#services{text-align: center;}
+.col-md-4, .col-md-6{padding-bottom: 50px;}
+.col-md-3 {padding: 0;}
+
+.sectionhead{
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+.clientsphoto img{
+	width: 80px;
+	float: left;
+	margin-right: 20px;
+	border-radius: 50%;
+	-webkit-transition: .7s ease-out;
+	-moz-transition: .7s ease-out;
+	-o-transition:  .7s ease-out;
+	transition: .7s ease-out;
+}
+
+.clientsphoto img:hover{
+	border-radius: 15%;
+}
+
+blockquote{
+	margin: 0;
+	padding: 0 0 10px 0;
+	border: none;
+}
+
+blockquote p{
+	font-style: italic;
+	font-size: 15px;
+}
+
+.quote{overflow: hidden}
+.quote h5{margin-bottom: 5px;}
+
+/*** CONTACTS ***/
+.contact h2 {
+	font-size: 28px;
+	font-family: Arial;
+	line-height: 34px;
+	display: inline-block;
+	padding-right: 50px;
+	padding-top: 32px;
+	padding-bottom: 2px;
+	margin-bottom: 30px;
+}
+
+a.btn {
+	display: inline-block;
+	background: #24BFE8;
+	color: #fff;
+	margin-top: 38px;
+	padding: 5px 15px;
+	font-size: 20px;
+	border-radius: 2px;
+	transition: all .3s;
+}
+
+a.btn:hover {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+
+.contact .content {
+	background: #fff;
+	padding-bottom: 95px;
+	margin-top: 100px;
+}
+
+.contact .content.page1 h2 {
+	margin-top: -2px;
+	padding-bottom: 2px;
+}
+
+.contact .content h2 {
+	margin-top: -5px;
+	padding-bottom: 2px;
+}
+
+.map {
+	padding-top: 0px;
+	padding-right: 22px;
+	margin-top: -1px;
+	color: #848383;
+}
+
+.map figure {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	margin-bottom: 26px;
+	border: 1px solid #f2f2f2;
+}
+.map figure iframe {
+	width: 100%;
+	height: 280px;
+	max-width: 100%;
+}
+
+.map p {
+	margin-bottom: 18px;
+}
+
+.map {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.map .text1 {
+	line-height: 20px;
+	margin-bottom: 2px;
+}
+
+address dt {
+	color: #000;
+}
+
+address dd span {
+	min-width: 100px;
+	display: inline-block;
+	text-align: left;
+}
+
+/*** FOOTER ***/
+
+.bottom {
+	background: #222;
+	color: #fff;
+}
+.bottom .left,
+.bottom .right {
+	width: 50%;
+	text-align: center;
+	line-height: 100px;
+}
+
+.bottom .left {
+	font-size: 50px;
+	float: left;
+}
+
+.bottom .right {
+	font-size: 40px;
+	float: right;
+	line-height: 200px;
+}
+
+.bottom .right .fa {
+	margin: 0 10px;
+	color: #fff;
+	transition: all .3s;
+}
+
+.bottom .right .fa:hover {
+	color: #24BFE8;
+}
+
+.bottom .down {
+	width: 50%;
+	text-align: center;
+}
+
+.bottom .down p {
+	color: #fff !important;
+}
+
+/*** RESPONSIVE ***/
+
+@media screen and (max-width: 1200px) {
+	.thumb,
+	.thumb .content {
+		margin: 0 auto;
+		width: 35vw;
+	}
+	.products {
+		width: 73vw;
+		margin: 0 auto;
+	}
+	.contact .map-over {
+		display: none;
+	}
+	.contact .form-over {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.contact label textarea,
+	.contact label input {
+		width: 85% !important;
+	}
+	.contact fieldset {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.modal-inner {
+		width: 100%;
+	}
+	.camera_wrap .camera_caption a {
+		width: 100%;
+		left: 0;
+	}
+	.camera_wrap .camera_caption h1 {
+		font-size: 22px;
+	}
+	.thumb,
+	.thumb .content {
+		margin: 0 auto;
+		width: 90vw;
+	}
+	.products {
+		width: 90vw;
+		margin: 0 auto;
+	}
+	.bottom .left {
+		display: none;
+	}
+	.bottom .right {
+		width: 100%;
+		float: none;
+	}
+}
+
+@media screen and (max-height: 550px) {
+	.modal-inner {
+		height: 100vh;
+		overflow: scroll;
+	}
+}

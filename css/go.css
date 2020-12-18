@@ -1,0 +1,271 @@
+* {
+    transition: all .3s;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-family: "RobotoCondensedLight";
+    color: #fff;
+    background: url(../img/back.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+
+/*** HEADER ***/
+
+.top {
+    height: 70px;
+    line-height: 70px;
+    padding: 0 6%;
+}
+
+/* headerning Logotipi */
+
+.top .logo {
+    float: left;
+}
+
+.top .logo img {
+    height: 40px;
+    margin: 15px 0;
+}
+
+/* headerning menusi */
+
+.top .menu {
+    float: right;
+}
+
+.top .menu a {
+    padding: 25px 0;
+    margin: 0 10px;
+    color: #fff;
+    font: 20px Arial;
+}
+
+a {
+    color: #fff;
+}
+.body {
+    margin: 0 7%;
+}
+}
+.fa {
+    border: none;
+}
+.fa:hover {
+    border: none;
+    opacity: .7;
+    cursor: pointer;
+}
+.search_ico a {
+    border: 0px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 11px;
+}
+.search_ico {
+    background: #24BFE8;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: -40px; 
+}
+.header {
+    height: 100%;
+}
+.ib {
+    margin: 0 7%;
+    margin-top: 12px;
+}
+.ib input {
+    width: 580px;
+    height: 40px;
+    border: none;
+    padding-left: 45px;
+}
+.b1 {
+    border: 2px solid #eee;
+    width: 20%;
+    float: right;
+    height: 40px;
+    padding: 8px;
+}
+.b2 {
+    text-align: center;
+    float: right;
+    height: 40px;
+    background: #24BFE8;
+    line-height: 100%;
+    padding: 11.5px 5px;
+    border: 1px solid #24BFE8;
+}
+.b2 a {
+    border: none;
+}
+.b2 a:hover {
+    color: #333;
+}
+.b2:hover {
+    border: 1px solid #eee;
+    color: #333;
+}
+.name {
+    font-size: 50px;
+    font-family: "NautilusPompiliusRegular";
+}
+.name a {
+    border: none;
+}
+.tabbed {
+    width: 100px;
+}
+.tabbed > input {
+    display: none;
+}
+.tabbed > label {
+    float: left;
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding-bottom: -10px;
+    margin-top: 15px;
+}
+.tabbed > label img {
+    width: 100%;
+    height: 100%;
+}
+.tabbed > label:hover,
+.tabbed > input:checked + label {
+    transform: scale(1.1); 
+}
+.tabs {
+    clear: both;
+    perspective: 600px;
+    float: left;
+    position: relative;
+}
+.tabs > div {
+    width: 450px;
+    height: 425px;
+    position: absolute;
+    padding: 10px 30px 40px;
+    line-height: 300px;
+    opacity: 0;
+    margin: -341px 0 0 100px;
+}
+#tab-nav-1:checked ~ .tabs > div:nth-of-type(1),
+#tab-nav-2:checked ~ .tabs > div:nth-of-type(2),
+#tab-nav-3:checked ~ .tabs > div:nth-of-type(3),
+#tab-nav-4:checked ~ .tabs > div:nth-of-type(4) {
+    opacity: 1;
+    transform: rotateX(0deg);
+}
+.sales {
+    float: right;
+    position: relative;
+    margin: -310px 0px 0 0;
+    background: rgba(235, 235, 235, 0.58);
+    width: 325px;
+    padding: 5px 10px;
+    text-align: center;
+    border: 2px solid #eee;
+}
+.bottom {
+    border-bottom: 2px solid #eee;
+}
+.fa-star {
+    color: yellow;
+}
+.sale {
+    background: #aaa;
+    height: 50px;
+    line-height: 52px;
+    margin-bottom: 10px;
+    padding: 0 5px;
+}
+.sale input {
+    width: 59px;
+    border: none;
+    background: none;
+    padding: 0 10px;
+}
+.add {
+    float: right;
+    margin-top: -0;
+    text-align: center;
+    width: 150px;
+    height: 52px;
+    float: right;
+    background: #24BFE8;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.add a {
+    border: none;
+}
+.add a:hover {
+    color: #333;
+}
+.add:hover {
+    border: 1px solid #eee;
+    color: #333;
+}
+.sign {
+    padding: 10px;
+    background: #aaa;
+}
+.sign a {
+    border: none;
+}
+.sign a:hover {
+    color: #222;
+}
+.link-w {
+    background: #aaa;
+    padding: 10px;
+}
+.link-w a {
+    border: none;
+    font-size: 20px;
+    margin-right: 11.5px;
+}
+.comment {
+    margin: 0 7%;
+    position: relative;
+    background: rgba(84, 84, 84, 0.85);
+    margin-top: 500px;
+    padding: 30px;
+    border: 2px solid #eee;
+}
+.comment1 {
+    margin: 0 7%;
+    margin-top: 10px;
+    background: rgba(84, 84, 84, 0.85);
+    padding: 30px;
+    border: 2px solid #eee;
+    position: relative;
+}
+.inp input {
+    border: none;
+    height: 50px;
+    width: 86%;
+    margin: 0 7%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    font-size: 20px;
+    padding: 10px;
+    background: rgba(84, 84, 84, 0.3);
+    color: #eee;
+    border-bottom: 5px solid #eee;
+    overflow-x: hidden; 
+}
+.hov a:hover {
+    color: rgb(40, 180, 250);
+}
